@@ -1,0 +1,4 @@
+node_modules
+**/desktop.ini
+.env
+**/maceira-backend-firebase-adminsdk.json

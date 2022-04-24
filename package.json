@@ -1,0 +1,16 @@
+{
+  "name": "desafio-04",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "firebase-admin": "^10.1.0",
+    "mongoose": "^6.3.1"
+  }
+}
