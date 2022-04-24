@@ -39,7 +39,6 @@ let carts;
 
 switch (process.env.NODE_DB_TYPE) {
   case "archivo": {
-    console.log(process.env.NODE_DB_TYPE, "ARCHIVO");
     const { default: ProductosDAOArchivo } = await import(
       "./classes/daos/productos/ProductosDAOArchivo.js"
     );
@@ -51,7 +50,6 @@ switch (process.env.NODE_DB_TYPE) {
     break;
   }
   case "firebase": {
-    console.log(process.env.NODE_DB_TYPE, "FIREBASE");
     const { default: ProductosDAOFirebase } = await import(
       "./classes/daos/productos/ProductosDAOFirebase.js"
     );
@@ -63,7 +61,6 @@ switch (process.env.NODE_DB_TYPE) {
     break;
   }
   case "memoria": {
-    console.log(process.env.NODE_DB_TYPE, "MEMORIA");
     const { default: ProductosDAOMemoria } = await import(
       "./classes/daos/productos/ProductosDAOMemoria.js"
     );
@@ -75,7 +72,6 @@ switch (process.env.NODE_DB_TYPE) {
     break;
   }
   case "mongodb": {
-    console.log(process.env.NODE_DB_TYPE, "MONGODB");
     const { default: ProductosDAOMongoDB } = await import(
       "./classes/daos/productos/ProductosDAOMongoDB.js"
     );
